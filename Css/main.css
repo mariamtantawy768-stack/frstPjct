@@ -5,6 +5,9 @@ body {
 * , *::before , *::after {
     box-sizing: border-box;
 }
+html, body {
+  overflow-x: hidden;
+}
 
 .main {
     font-family: "Boldonse", system-ui;
@@ -168,3 +171,4 @@ i {
 .email-address {
     height: 50px;
 }
+
