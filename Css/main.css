@@ -1,0 +1,170 @@
+body {
+    margin: 0;
+}
+
+* , *::before , *::after {
+    box-sizing: border-box;
+}
+
+.main {
+    font-family: "Boldonse", system-ui;
+}
+
+.section-one {
+    background-color: oklch(94.5% .129 101.54);
+}
+
+
+.nav {
+    
+    background-color: white;
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    align-items: center;
+    margin: auto;
+    position: sticky;
+    top: 0;
+    z-index: 10000;
+}
+
+.links {
+    display: flex;
+    gap: 20px;
+}
+.nav  a{
+    text-decoration: none;
+    color: black;
+}
+
+.subs {
+    background-color: #ffd15b;
+    color: black;
+    border: 1px solid black;
+    border-radius: 30px;
+    padding: 0 15px;
+}
+
+h1 span {
+    color: oklch(70.5% .213 47.604);
+}
+
+.feature {
+    transform: rotate(20deg);
+    right: 0;
+    top: -8px;
+}
+
+.img-one {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.description {
+    line-height: 20px;
+}
+.trending-now {
+    transform: rotate(-20deg);
+}
+
+h1 > span {
+    display: block;
+    text-shadow: 3px 3px 0 black;
+    font-size: clamp(2rem, 6vw, 3rem);
+}
+.buttons {
+    display: flex;
+    justify-content: space-around;
+}
+button {
+    width: 250px;
+    height: 50px;
+    border: 3px solid black;
+    box-shadow: 10px 10px 0 black;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+button:hover {
+    box-shadow: 0 0 0 black;
+}
+/* End first section */
+
+/* Start Second section */
+.section-2 {
+    font-family: sans-serif;
+    background-color: oklch(97% 0 0);
+}
+.first-artc {
+    box-shadow: 5px 5px 0 black;
+    transition: 0.3s;
+}
+.first-artc:hover {
+    box-shadow: 0 0 0 black;
+}
+.trend {
+    transition: 0.3s;
+}
+.trend:hover {
+    box-shadow: 5px 5px 0 black;
+} 
+.trend-1:hover {
+    background-color: yellow !important; 
+}
+.trend-2:hover {
+    background-color: green !important;
+}
+.trend-3:hover {
+    background-color: red !important;
+}
+.trend-4:hover {
+    background-color: rgb(11, 106, 239) !important;
+}
+.trend-5:hover {
+    background-color: rgb(73, 125, 96) !important;
+}
+/* End Second section */
+/* Start Third section */
+.author > p {
+    top: 0;
+    right: 0;
+}
+
+.author {
+    box-shadow: 5px 5px 0 0 black ;
+    font-family: sans-serif;
+}
+.author-1 {
+    background-color: oklch(97.3% .071 103.193);
+}
+.author-2 {
+    background-color: oklch(96.2% .044 156.743);
+}
+.author-3 {
+    background-color: oklch(94.8% .028 342.258);
+}
+i {
+  vertical-align: middle;
+}
+
+
+.first-artc h2:hover {
+    color: red !important;
+}
+
+.footer {
+    font-family: sans-serif;
+}
+.categories-links a {
+    transition: 0.3s;
+}
+.categories-links a:hover
+, .policies p:hover {
+    color: yellow !important;
+}
+
+.email-address {
+    height: 50px;
+}
