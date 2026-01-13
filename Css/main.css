@@ -1,58 +1,43 @@
 body {
     margin: 0;
+    font-family: "Boldonse", system-ui;
+    background-color: oklch(94.5% .129 101.54);
 }
 
 * , *::before , *::after {
     box-sizing: border-box;
 }
+
 html, body {
   overflow-x: hidden;
 }
 
-.main {
-    font-family: "Boldonse", system-ui;
-}
-
-.section-one {
-    background-color: oklch(94.5% .129 101.54);
-}
-
-
-.nav {
-    
-    background-color: white;
-    width: 90%;
-    display: flex;
-    justify-content: space-around;
-    border-radius: 20px;
-    align-items: center;
-    margin: auto;
+.main-nav {
     position: sticky;
     top: 0;
     z-index: 10000;
+    border-radius: 17px;
+    font-family: sans-serif;
 }
 
-.links {
-    display: flex;
-    gap: 20px;
+ul a {
+    transition: 0.2s;
 }
-.nav  a{
-    text-decoration: none;
-    color: black;
-}
-
-.subs {
-    background-color: #ffd15b;
-    color: black;
-    border: 1px solid black;
-    border-radius: 30px;
-    padding: 0 15px;
+ul a:hover {
+    color: oklch(70.5% .213 47.604) !important;
 }
 
 h1 span {
     color: oklch(70.5% .213 47.604);
 }
+header button {
+    border-radius: 17px;
+    text-align: center;
+}
 
+/* End NavBar */
+
+/* Start First section */
 .feature {
     transform: rotate(20deg);
     right: 0;
@@ -73,16 +58,16 @@ h1 span {
     transform: rotate(-20deg);
 }
 
-h1 > span {
+section h1 > span {
     display: block;
     text-shadow: 3px 3px 0 black;
     font-size: clamp(2rem, 6vw, 3rem);
 }
-.buttons {
+section .buttons {
     display: flex;
     justify-content: space-around;
 }
-button {
+section button {
     width: 250px;
     height: 50px;
     border: 3px solid black;
@@ -90,7 +75,7 @@ button {
     transition: all 0.3s;
     text-decoration: none;
 }
-button:hover {
+section button:hover {
     box-shadow: 0 0 0 black;
 }
 /* End first section */
@@ -171,4 +156,5 @@ i {
 .email-address {
     height: 50px;
 }
+
 
